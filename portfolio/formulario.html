@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div id="contenedor">
+        <header class="header">
+            <h1>FORMULARIO</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Principal</a></li>
+                <li><a href="">Personajes favoritos</a></li>
+                <li><a href="">Formulario (Creación de personajes)</a></li>
+                <li><a href="">Animes parecidos</a></li>
+            </ul>
+        </nav>
+    <main>
+        <article>
+            <h2>Registra tu observación</h2>
+            <p id="infoazul"><img src="">Los datos marcados en <span>rojo</span> y con asterisco son obligatorios</p>
+
+            <form action="" method="post">
+                <div id="pformulario">
+                    <h3>Datos de la especie(*)</h3>
+                    <p><label for="nombre"><span>Nombre científico de la especie(*):</span></label><br><input type="text" name="nombre" id="nombre"/></p>
+                    <p><label for="numeroT">Número total de ejemplares:</label><br><input type="number" name="numeroT" id="numeroT"/></p>
+                    <p><label for="numeroM">Número de machos:</label><br><input type="number" name="numeroM" id="numeroM"/></p>
+                    <p><label for="numeroH">Número de hembras:</label><br><input type="number" name="numeroH" id="numeroH"/></p>
+                    <p><label for="numeroI">Número de indeterminados:</label><br><input type="number" name="numeroI" id="numeroI"/></p>
+                </div>
+                <div id="sformulario">
+                    <h3>Datos de la observación</h3>
+                    <p><label for="ubicacion"><span>Ubicación(*):</span></label><br><input type="text" name="ubicacion" id="ubicacion"/></p>
+                    <p><label for="coordenadas">Coordenadas:<span id="pequena">(p.e.40.43N3.5445W)</span></label><br><input type="number" name="coordenadas" id="coordenadas"/></p>
+                    <p><label for="fecha"><span>Fecha(*):</span></label><br><input type="date" name="fecha" id="fecha"/></p>
+
+                    <p><label for="meteorologia">Meteorología:</label><br>
+                        <select name="meteorologia" id="meteorologia">
+                            <option value="meteorologia"></option>
+                        </select>
+                    </p>	
+                    <p><label for="tipoterreno">Tipo de terreno:</label><br>
+                    <select name="tipoterreno" id="tipoterreno">
+                        <option value="tipoterreno"></option>
+                    </select>
+                    </p>
+                </div>
+                <p id="pregunta">¿Desea incluir sus datos personales?<label for="respuesta"></label>
+                    <select name="respuesta" id="respuesta">
+                        <option selected value="respuesta">NO</option>
+                    </select>
+                </p>
+                <p id="simbolos">Escriba los siguientes caracteres:<img src="./recursos/Captcha-ejemplo.jpg"><label for="nombre"></label><input type="text" name="nombre" id="nombre"/><img class="imgult" src="./recursos/sound.png"><img class="imgult" src="./recursos/captcha-q.png"><img class="imgult" src="./recursos/refresh25x25.png"></p>
+
+                <div>
+                    <input id="datos" type="submit" value="Enviar Observacion">
+                </div>
+            </form>
+            
+        </article>
+    </main>
+    <footer>
+        <div class="logotipos">
+            <img src="" alt="facebook">
+            <img src="" alt="twitter">
+            <img src="" alt="instagram">
+            <img src="" alt="whatsapp">
+            <p>Bosco,2022,Copyright</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
